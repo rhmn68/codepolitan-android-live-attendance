@@ -13,4 +13,8 @@
     <string name="your_photo">Your Photo</string>
     <string name="check_in">Check-In</string>
     <string name="check_out">Check-out</string>
+    <string name="profile">Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_language">Change Language</string>
+    <string name="logout">Logout</string>
 </resources>
