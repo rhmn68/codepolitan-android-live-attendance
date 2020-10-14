@@ -12,4 +12,5 @@
     <string name="default_text">-</string>
     <string name="your_photo">Your Photo</string>
     <string name="check_in">Check-In</string>
+    <string name="check_out">Check-out</string>
 </resources>
