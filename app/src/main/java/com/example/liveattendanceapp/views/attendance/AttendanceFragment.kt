@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.liveattendanceapp.R
+import com.example.liveattendanceapp.databinding.FragmentAttendanceBinding
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -17,11 +18,20 @@ class AttendanceFragment : Fragment(), OnMapReadyCallback {
 
     private var mapAttendance: SupportMapFragment? = null
     private var map: GoogleMap? = null
+    private var binding: FragmentAttendanceBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.fragment_attendance, container, false)
+    ): View?{
+        binding = FragmentAttendanceBinding.inflate(inflater, container, false)
+        return binding?.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -35,13 +45,13 @@ class AttendanceFragment : Fragment(), OnMapReadyCallback {
 
     override fun onMapReady(googleMap: GoogleMap?) {
         map = googleMap
-        val sydney = LatLng(-33.852, 151.211)
+        val codepolitan = LatLng(-6.879513, 107.590085)
         map?.addMarker(
             MarkerOptions()
-                .position(sydney)
+                .position(codepolitan)
                 .title("Marker in Sydney")
         )
-        map?.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        map?.moveCamera(CameraUpdateFactory.newLatLng(codepolitan))
         map?.animateCamera(CameraUpdateFactory.zoomTo(20f))
     }
 
