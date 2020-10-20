@@ -21,4 +21,8 @@
     <string name="new_password">New Password</string>
     <string name="confirm_new_password">Confirm New Password</string>
     <string name="attendance">Attendance</string>
+    <string name="please_field_your_email">Please field your email</string>
+    <string name="please_use_valid_email">Please use valid email</string>
+    <string name="please_field_your_password">Please field your password</string>
+    <string name="failed">Failed</string>
 </resources>
