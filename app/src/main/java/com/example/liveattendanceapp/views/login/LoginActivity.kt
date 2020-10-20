@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.liveattendanceapp.R
 import com.example.liveattendanceapp.databinding.ActivityLoginBinding
+import com.example.liveattendanceapp.hawkstorage.HawkStorage
 import com.example.liveattendanceapp.views.forgotpass.ForgotPasswordActivity
 import com.example.liveattendanceapp.views.main.MainActivity
 import org.jetbrains.anko.startActivity
