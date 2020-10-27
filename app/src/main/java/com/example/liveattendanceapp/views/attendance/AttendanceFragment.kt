@@ -1,7 +1,6 @@
 package com.example.liveattendanceapp.views.attendance
 
 import android.Manifest
-import android.app.Activity
 import android.app.Activity.RESULT_OK
 import android.app.AlertDialog
 import android.content.Context.LOCATION_SERVICE
@@ -58,7 +57,6 @@ import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.HashMap
-import kotlin.jvm.Throws
 
 class AttendanceFragment : Fragment(), OnMapReadyCallback {
 
