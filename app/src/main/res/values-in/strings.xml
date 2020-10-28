@@ -37,4 +37,6 @@
     <string name="success_check_out">Sukses Keluar</string>
     <string name="something_wrong">Ada yang salah</string>
     <string name="your_already_present">Kamu sudah absen</string>
+    <string name="your_password_didnt_match">Kata sandi tidak cocok</string>
+    <string name="your_password_has_been_update">Password anda sudah diperbarui</string>
 </resources>
