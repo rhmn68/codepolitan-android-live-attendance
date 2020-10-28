@@ -17,6 +17,7 @@ android {
 
         //BASE_URL
         buildConfigField "String", "BASE_URL", "\"http://35.240.152.225/api/\""
+        buildConfigField "String", "BASE_IMAGE_URL", "\"http://35.240.152.225/storage/profile/\""
     }
 
     buildTypes {
